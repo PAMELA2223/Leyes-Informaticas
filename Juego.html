@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Informático</title>
+
+<link rel="stylesheet" href="sti.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+/* SOLO ESTILOS DEL QUIZ */
+
+.quiz{
+background:white;
+padding:40px;
+border-radius:20px;
+margin-top:40px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.pregunta{
+font-size:28px;
+margin-bottom:30px;
+color:#7f5af0;
+font-weight:bold;
+}
+
+.respuestas{
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-bottom:30px;
+}
+
+.respuestas button{
+padding:18px;
+font-size:18px;
+}
+
+.resultado{
+font-size:30px;
+margin-top:30px;
+color:#2cb67d;
+font-weight:bold;
+}
+
+.imagen-quiz{
+width:100%;
+max-height:300px;
+object-fit:cover;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<h1>🧠 Quiz Informático</h1>
+
+<p>
+Pon a prueba tus conocimientos
+sobre legislación informática
+</p>
+
+</header>
+
+<!-- MENU -->
+
+<nav class="menu">
+
+<ul>
+
+<li>
+<a href="inicio.html">
+🏠 Inicio
+</a>
+</li>
+
+
+
+</ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<main>
+
+<section class="quiz">
+
+<img
+class="imagen-quiz"
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<div class="pregunta"
+id="pregunta">
+
+Pregunta
+
+</div>
+
+<div class="respuestas"
+id="respuestas">
+</div>
+
+<div class="resultado"
+id="resultado">
+</div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Legislación Informática | Pamela Torres
+</p>
+
+</footer>
+
+<script>
+
+// PREGUNTAS
+
+const preguntas = [
+
+{
+pregunta:
+"¿Qué protege la Ley de Protección de Datos?",
+
+respuestas:[
+"Los videojuegos",
+"La información personal",
+"Las redes sociales",
+"Las computadoras"
+],
+
+correcta:1
+},
+
+{
+pregunta:
+"¿Qué es phishing?",
+
+respuestas:[
+"Un antivirus",
+"Un robo de información",
+"Un juego",
+"Un navegador"
+],
+
+correcta:1
+},
+
+{
+pregunta:
+"¿Qué institución regula delitos informáticos en Ecuador?",
+
+respuestas:[
+"COIP",
+"Netflix",
+"Facebook",
+"Google"
+],
+
+correcta:0
+},
+
+{
+pregunta:
+"¿Qué debes usar para proteger tus cuentas?",
+
+respuestas:[
+"Contraseñas seguras",
+"Tu nombre",
+"123456",
+"Tu fecha de nacimiento"
+],
+
+correcta:0
+},
+
+{
+pregunta:
+"¿Qué es un delito informático?",
+
+respuestas:[
+"Usar Word",
+"Escuchar música",
+"Acceder ilegalmente a sistemas",
+"Ver videos"
+],
+
+correcta:2
+}
+
+];
+
+// VARIABLES
+
+let actual = 0;
+let puntos = 0;
+
+// ELEMENTOS
+
+const pregunta =
+document.getElementById("pregunta");
+
+const respuestas =
+document.getElementById("respuestas");
+
+const resultado =
+document.getElementById("resultado");
+
+// CARGAR PREGUNTA
+
+function cargarPregunta(){
+
+let q = preguntas[actual];
+
+pregunta.innerHTML = `
+<i class="fa-solid fa-circle-question"></i>
+${q.pregunta}
+`;
+
+respuestas.innerHTML = "";
+
+q.respuestas.forEach((respuesta,index)=>{
+
+const boton =
+document.createElement("button");
+
+boton.innerHTML = respuesta;
+
+boton.onclick = ()=> verificar(index);
+
+respuestas.appendChild(boton);
+
+});
+
+}
+
+// VERIFICAR
+
+function verificar(index){
+
+if(index === preguntas[actual].correcta){
+
+puntos++;
+
+}
+
+actual++;
+
+if(actual < preguntas.length){
+
+cargarPregunta();
+
+}else{
+
+mostrarResultado();
+
+}
+
+}
+
+// RESULTADO
+
+function mostrarResultado(){
+
+pregunta.innerHTML =
+"🎉 Quiz Finalizado";
+
+respuestas.innerHTML = "";
+
+resultado.innerHTML = `
+Obtuviste ${puntos}
+de ${preguntas.length} respuestas correctas
+`;
+
+}
+
+// INICIAR
+
+cargarPregunta();
+
+</script>
+
+</body>
+</html>

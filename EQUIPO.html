@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Equipo de Desarrollo</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#dbeafe,#e0e7ff,#cffafe);
+min-height:100vh;
+color:#1e293b;
+}
+
+/* HEADER */
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(10px);
+}
+
+.hero h1{
+font-size:50px;
+color:#7f5af0;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#334155;
+}
+
+/* MENU */
+
+.menu{
+background:white;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.menu ul{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+list-style:none;
+}
+
+.menu a{
+text-decoration:none;
+color:#1e293b;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#7f5af0;
+}
+
+/* MAIN */
+
+main{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+/* TARJETA */
+
+.equipo{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+.card-equipo{
+background:white;
+width:350px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.card-equipo:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(127,90,240,0.3);
+}
+
+/* IMAGEN */
+
+.card-equipo img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+/* INFO */
+
+.info{
+padding:25px;
+text-align:center;
+}
+
+.info h2{
+color:#7f5af0;
+margin-bottom:10px;
+font-size:30px;
+}
+
+.info h3{
+color:#2cb67d;
+margin-bottom:20px;
+font-size:20px;
+}
+
+.info p{
+color:#334155;
+margin-bottom:15px;
+text-align:justify;
+line-height:1.7;
+}
+
+/* REDES */
+
+.redes{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.redes a{
+width:45px;
+height:45px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#7f5af0,#2cb67d);
+color:white;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+transition:0.3s;
+}
+
+.redes a:hover{
+transform:scale(1.1);
+}
+
+/* OBJETIVO */
+
+.objetivo{
+background:white;
+padding:40px;
+border-radius:20px;
+margin-top:50px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.objetivo h2{
+color:#7f5af0;
+margin-bottom:20px;
+font-size:35px;
+text-align:center;
+}
+
+.objetivo p{
+color:#334155;
+text-align:justify;
+line-height:1.8;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:50px;
+background:#7f5af0;
+padding:20px;
+text-align:center;
+color:white;
+font-size:17px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<h1>👨‍💻 Equipo de Desarrollo</h1>
+
+<p>
+Conoce a la creadora del proyecto
+de Legislación Informática
+</p>
+
+</header>
+
+<!-- MENU -->
+
+<nav class="menu">
+
+<ul>
+
+<li><a href="inicio.html">Inicio</a></li>
+
+
+</ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<main>
+
+<div class="equipo">
+
+<div class="card-equipo">
+
+<!-- TU FOTO -->
+<img src="WhatsApp Image 2026-05-19 at 12.33.45 PM.jpeg" alt="Pamela Torres">
+
+<div class="info">
+
+<h2>Pamela Torres</h2>
+
+
+<p>
+
+Estudiante de Ingeniería en la UTLV.
+Creadora del proyecto de Legislación
+Informática enfocado en educar sobre
+ciberseguridad, delitos digitales y
+protección de datos personales.
+
+</p>
+
+<p>
+
+Este proyecto busca informar a los
+usuarios sobre el uso responsable
+de la tecnología y las leyes digitales
+en Ecuador.
+
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OBJETIVO -->
+
+<section class="objetivo">
+
+<h2>🎯 Objetivo del Proyecto</h2>
+
+<p>
+
+El objetivo principal de esta plataforma
+es brindar información educativa sobre
+legislación informática en Ecuador,
+incluyendo temas de protección de datos,
+delitos informáticos, ciberseguridad y
+uso responsable de internet.
+
+Además, se busca crear conciencia sobre
+la importancia de la seguridad digital
+y fomentar buenas prácticas tecnológicas
+en estudiantes y usuarios de internet.
+
+</p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Legislación Informática | Pamela Torres
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Videos Educativos</title>
+
+<link rel="stylesheet" href="sti.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+/* CONTENEDOR VIDEOS */
+
+.videos{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+margin-top:40px;
+}
+
+/* CARD VIDEO */
+
+.video-card{
+background:white;
+width:320px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.4s;
+position:relative;
+}
+
+.video-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(127,90,240,0.3);
+}
+
+/* IMAGEN */
+
+.video-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+/* ICONO */
+
+.icono{
+position:absolute;
+top:15px;
+right:15px;
+background:#7f5af0;
+color:white;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:20px;
+}
+
+/* INFO */
+
+.info{
+padding:25px;
+}
+
+.info h3{
+margin-bottom:15px;
+color:#7f5af0;
+font-size:24px;
+}
+
+.info p{
+margin-bottom:20px;
+color:#334155;
+text-align:justify;
+}
+
+/* BOTON */
+
+.boton-video{
+display:inline-block;
+padding:12px 20px;
+border-radius:12px;
+text-decoration:none;
+background:linear-gradient(135deg,#7f5af0,#2cb67d);
+color:white;
+transition:0.3s;
+font-weight:bold;
+}
+
+.boton-video:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px rgba(44,182,125,0.6);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<h1>🎥 Videos Educativos</h1>
+
+<p>
+Aprende sobre leyes informáticas,
+ciberseguridad y protección digital
+</p>
+
+</header>
+
+<!-- MENU -->
+
+<nav class="menu">
+
+<ul>
+
+<li><a href="inicio.html">Inicio</a></li>
+
+
+</ul>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<main>
+
+<section class="presentacion">
+
+<h2>Videos sobre Legislación Informática</h2>
+
+<p>
+En esta sección encontrarás videos educativos
+sobre leyes informáticas, delitos digitales,
+protección de datos y seguridad en internet.
+</p>
+
+</section>
+
+<!-- VIDEOS -->
+
+<div class="videos">
+
+<!-- VIDEO 1 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87">
+
+<div class="info">
+
+<h3>Ciberseguridad</h3>
+
+<p>
+Aprende cómo proteger tus datos
+y evitar ataques informáticos.
+</p>
+
+<a
+href="https://youtu.be/2qedRXYNr0s?si=BC0KsQJyezTzws0G"
+target="_blank"
+class="boton-video">
+
+🎥 Ver Video
+
+</a>
+
+</div>
+</div>
+
+<!-- VIDEO 2 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-lock"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1563986768609-322da13575f3">
+
+<div class="info">
+
+<h3>Protección de Datos</h3>
+
+<p>
+Conoce cómo proteger tu información
+personal en internet.
+</p>
+
+<a
+href="https://youtu.be/hXSFdwIOfnE"
+target="_blank"
+class="boton-video">
+
+🔐 Ver Video
+
+</a>
+
+</div>
+</div>
+
+<!-- VIDEO 3 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-user-secret"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<div class="info">
+
+<h3>Delitos Informáticos</h3>
+
+<p>
+Descubre los delitos digitales
+más comunes y sus consecuencias.
+</p>
+
+<a
+href="https://youtu.be/XDuW7D4l8sM"
+target="_blank"
+class="boton-video">
+
+⚠️ Ver Video
+
+</a>
+
+</div>
+</div>
+
+<!-- VIDEO 4 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-scale-balanced"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f">
+
+<div class="info">
+
+<h3>Leyes Informáticas</h3>
+
+<p>
+Aprende sobre normas y leyes
+relacionadas con la tecnología.
+</p>
+
+<a
+href="https://youtu.be/8Zkv7p4Yz5U"
+target="_blank"
+class="boton-video">
+
+⚖️ Ver Video
+
+</a>
+
+</div>
+</div>
+
+<!-- VIDEO 5 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-globe"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f">
+
+<div class="info">
+
+<h3>Seguridad en Redes</h3>
+
+<p>
+Aprende cómo proteger
+tus redes sociales.
+</p>
+
+<a
+href="https://youtu.be/rz0RL4Xue-A"
+target="_blank"
+class="boton-video">
+
+🌐 Ver Video
+
+</a>
+
+</div>
+</div>
+
+<!-- VIDEO 6 -->
+
+<div class="video-card">
+
+<div class="icono">
+<i class="fa-solid fa-computer"></i>
+</div>
+
+<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931">
+
+<div class="info">
+
+<h3>Uso Responsable</h3>
+
+<p>
+Buenas prácticas para navegar
+de forma segura.
+</p>
+
+<a
+href="https://youtu.be/W6bYp5N9dL4"
+target="_blank"
+class="boton-video">
+
+💻 Ver Video
+
+</a>
+
+</div>
+</div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Legislación Informática | Pamela Torres
+</p>
+
+</footer>
+
+</body>
+</html>
